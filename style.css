@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
+    background-color: #020929; /* Default background color */
+}
+
+
+
+  .container {
+    background-color: #ffffff;
+    width: 90vmin;
+    padding: 30px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    /* margin-bottom: 30px; */
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+    border-radius: 10px;
+    border: 5px solid #A3FFD6;
+  }
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+  button {
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    /* border: none; */
+    border-radius: 7px;
+    background-color: #ffffff;
+    outline: none;
+    color: #020929;
+    border: 2px solid #8576FF;
+  }
+  select {
+    
+    
+    padding: 7px;
+   
+    
+    border: 2px solid #8576FF;
+    border-radius: 7px;
+  }
+  .options label,
+  .options select {
+    font-family: "Poppins", sans-serif;
+  }
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+    border: 2px solid #8576FF;
+    
+  }
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+    border: 2px solid #8576FF;
+  }
+  #text-input {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 3px solid #8576FF;
+    padding: 20px;
+    height: 50vh;
+    background-color: white;
+  }
+  .active {
+    background-color: #e0e9ff;
+  }
+
+  .download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  .dnload{
+    height: 40px;
+    margin-top: 20px;
+
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    
+
+  }
+
+  .foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Ensure the footer spans the full width of the viewport */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    /* background-color: #1C1678; Match the background color of the body */
+    height: 50px; 
+  }
+  
+  .footerr p {
+    text-align: center;
+    color: #A3FFD6;
+    font-family: 'roboto';
+  }
+  
