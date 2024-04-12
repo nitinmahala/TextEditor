@@ -134,27 +134,50 @@ const highlighterRemover = (className) => {
   
 //   // Add event listener to the download button
 //   document.getElementById('downloadPDF').addEventListener('click', downloadPDF);
-click_to_record.addEventListener('click',function(){
-  var speech = true;
-  window.SpeechRecognition = window.webkitSpeechRecognition;
+voiceCheck = document.getElementById("voiceCheck");
+vc=document.getElementById("vc");
 
-  const recognition = new SpeechRecognition();
-  recognition.interimResults = true;
+click_to_record.addEventListener('click', function() {
+    var speech = true;
+    window.SpeechRecognition = window.webkitSpeechRecognition;
 
-  recognition.addEventListener('result', e => {
-      const transcript = Array.from(e.results)
-          .map(result => result[0])
-          .map(result => result.transcript)
-          .join('')
+    const recognition = new SpeechRecognition();
+    recognition.interimResults = true;
 
-      document.getElementById("text-input").innerHTML = transcript;
-      console.log(transcript);
-  });
+    recognition.addEventListener('result', e => {
+        const transcript = Array.from(e.results)
+            .map(result => result[0])
+            .map(result => result.transcript)
+            .join('')
+      
+        document.getElementById("text-input").innerHTML = transcript;
+        console.log(transcript);
+    });
+
+    recognition.addEventListener('start', () => {
+        
+        voiceCheck.style.backgroundColor = "#FF0000";
+
+        voiceCheck.style.opacity="100";
+
+    });
+
+    recognition.addEventListener('end', () => {
+        // Change color to white when speech recognition ends
+        voiceCheck.style.color = "#FFFFFF";
+        voiceCheck.style.opacity = "0";
+    });
   
-  if (speech == true) {
-      recognition.start();
-  }
-})
+    if (speech == true) {
+        recognition.start();
+    }
+});
+
+// Initial color setting
+voiceCheck.style.opacity = "0";
+
+
+
 
   
 
