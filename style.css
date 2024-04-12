@@ -9,15 +9,33 @@
 }
 
 
+.head{
+  text-align: center;
+  color: #A3FFD6;
+  /* padding: 10px; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+.head h1{
+  text-align: center;
+  color: #A3FFD6;
+  /* padding: 10px; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+
+
 
   .container {
     background-color: #ffffff;
-    width: 90vmin;
+    width: 90vw;
+    height: 80vh;
+    /* height: auto; */
     padding: 30px 30px;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 55%;
     /* margin-bottom: 30px; */
     border-radius: 10px;
     box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
@@ -87,7 +105,7 @@
     border-radius: 10px;
     border: 3px solid #8576FF;
     padding: 20px;
-    height: 50vh;
+    height: 27vh;
     background-color: white;
   }
   .active {
@@ -104,7 +122,8 @@
   .dnload{
     height: 40px;
     margin-top: 20px;
-
+    /* position: relative; */
+    /* bottom: 0; */
     border-radius: 10px;
     width: 200px;
     text-align: center;
@@ -118,20 +137,20 @@
 
   }
 
-  .foot {
-    position: fixed;
+  /* .foot {
+    position: absolute;
     bottom: 0;
     width: 100%; /* Ensure the footer spans the full width of the viewport */
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    /* display: flex; */
+    /* justify-content: center; Center the content horizontally */
+    /* align-items: center; Center the content vertically */
     /* background-color: #1C1678; Match the background color of the body */
-    height: 50px; 
-  }
+    /* height: 50px;  */
+  /* } */
   
-  .footerr p {
+  /* .footerr p {
     text-align: center;
     color: #A3FFD6;
     font-family: 'roboto';
   }
-  
+   */ 
