@@ -138,6 +138,25 @@
 
   }
 
+    .wordc{
+      border: 3px solid #020929;
+      background-color: #020929;
+      /* position: relative;
+      
+      left: 42%; */
+      color: #A3FFD6;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      /* border-radius: 10px; */
+
+      padding: 20px;
+      margin: 20px;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
   /* .foot {
     position: absolute;
     bottom: 0;
