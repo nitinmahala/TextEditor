@@ -182,9 +182,29 @@ voiceCheck.style.opacity = "0";
   
 
   
+
+const countWords = () => {
+  const textInput = document.getElementById("text-input");
+  const text = textInput.innerText || textInput.textContent;
+  const words = text.trim().split(/\s+/); 
+  return (words.length);
+};
+
+
+const updateWordCount = () => {
+  const wordCount = countWords();
+  document.getElementById("wordCountDisplay").innerText = `${wordCount}`;
+};
+
+
+document.getElementById("text-input").addEventListener("input", updateWordCount);
+
+
+updateWordCount();
   
 
 window.onload = initializer();
+
 
 
 
