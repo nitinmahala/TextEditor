@@ -24,8 +24,7 @@ let fontList = [
 
 //Initial Settings
 const initializer = () => {
-  //function calls for highlighting buttons
-  //No highlights for link, unlink,lists, undo,redo since they are one time operations
+
   highlighter(alignButtons, true);
   highlighter(spacingButtons, true);
   highlighter(formatButtons, false);
